@@ -2,8 +2,10 @@ package ru.job4j.condition;
 
 public class RectangleArea {
     public static double square(double p, double k) {
-        double result = p / (2 * (k + 1)) * k * p / (2 * (k + 1));
-        return result;
+        double result1 = p / (2 * (k + 1));
+        double result2 = result1 * k;
+        double result3 = result1 * result2;
+        return result3;
     }
 
     public static void main(String[] args) {
