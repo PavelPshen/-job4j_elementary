@@ -33,4 +33,14 @@ public class MinDiapasonTest {
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void whenOneNumber() {
+        int[] array = new int[] {2};
+        int start = 0;
+        int finish = 0;
+        int result = MinDiapason.findMin(array, start, finish);
+        int expected = 2;
+        assertThat(result).isEqualTo(expected);
+    }
 }
